@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmación de Asistencia</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> </head>
+<body>
+    <header>
+        <h1>Invitación Especial</h1>
+        <p>¡Nos encantaría contar contigo!</p>
+    </header>
+    <div class="container">
+        <div class="envelope" id="envelope">
+            <div class="envelope-front"></div>
+            <div class="envelope-top"></div>
+            <div class="letter">
+                <div class="letter-content" id="initial-content">
+                    <i class="fas fa-envelope-open-text envelope-icon"></i>
+                    <h1>¿Confirmas tu asistencia?</h1>
+                    <p>¡Nos encantaría contar con tu presencia en nuestro evento especial!</p>
+                    <div class="decision-buttons">
+                        <button class="btn btn-yes" id="btn-yes">Asisto</button>
+                        <button class="btn btn-no" id="btn-no">No asisto</button>
+                    </div>
+                </div>
+
+                <div class="form-container" id="form-container">
+                    <h1 id="form-title">Confirma tu asistencia</h1>
+                    <p id="form-description">Por favor, déjanos tu nombre para confirmar.</p>
+                    <div class="form-group">
+                        <label for="nombre">Tu nombre</label>
+                        <input type="text" class="form-control" id="nombre" placeholder="Escribe tu nombre completo" required>
+                    </div>
+                    <button class="btn btn-submit" id="btn-submit">Enviar</button>
+                </div>
+
+                <div class="loading" id="loading">
+                    <div class="spinner"></div>
+                    <p>Preparando tu mensaje...</p>
+                </div>
+
+                <div class="thank-you" id="thank-you">
+                    <h2>¡Gracias!</h2>
+                    <p>Tu confirmación ha sido enviada. ¡Te esperamos!</p>
+                    <i class="fab fa-whatsapp social-icon"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script> </body>
+</html>
