@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             // Construir el mensaje de WhatsApp
             const mensaje = `Hola, soy ${nombre} y ${userResponse} al evento.`;
-            const whatsappURL = `https://wa.me/593995864018?text=${encodeURIComponent(mensaje)}`;
+            const whatsappURL = `https://wa.me/593983848875?text=${encodeURIComponent(mensaje)}`;
 
             // Abrir WhatsApp en una nueva pestaña
             window.open(whatsappURL, '_blank');
